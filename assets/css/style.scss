@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Header
+header {
+  background-color: #f3f4fa;
+  padding: 16px 0px;
+
+  .logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: blue;
+  }
+
+  .nav .nav-list {
+    display: flex;
+    justify-content: space-around;
+
+    .nav-list-item {
+      list-style-type: none;
+      margin-right: 24px;
+    }
+
+    .nav-list-item.login {
+      color: blue;
+    }
+  }
+}
+
+// Hero
+.hero-section {
+  background-color: #f3f4fa;
+
+  .slogan {
+    font-size: 48px;
+    font-weight: 700;
+
+    .easy {
+      color: blue;
+      text-decoration: underline;
+    }
+
+    .secondary {
+      margin-top: 16px;
+      font-size: 18px;
+      color: gray;
+    }
+  }
+
+  .hero-img-wrapper {
+    text-align: right;
+
+    .hero-img {
+      width: 80%;
+      object-fit: cover;
+    }
+  }
+}
+
+// Quick Search
+.quick-search {
+  background-color: #fff;
+  margin: 36px 0;
+
+  .wrapper {
+    box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .qs-input {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .search-section {
+    .search {
+      background: linear-gradient(45deg, #0e5394, #214dac);
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+  }
+}
+
+.car-brand {
+  justify-content: space-around;
+  margin-bottom: 75px;
+
+  img {
+    padding: 14px;
+    width: 140px;
+    object-fit: cover;
+  }
+}

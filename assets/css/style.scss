@@ -78,7 +78,7 @@ header {
 // Quick Search
 .quick-search {
   background-color: #fff;
-  margin: 36px 0;
+  margin: 50px 0;
 
   .wrapper {
     box-shadow: 6px 4px 8px rgba(0, 0, 0, 0.2);
@@ -126,7 +126,7 @@ header {
 
 .car-brand {
   justify-content: space-around;
-  margin-bottom: 75px;
+  margin: 75px;
 
   img {
     padding: 14px;
@@ -134,3 +134,88 @@ header {
     object-fit: cover;
   }
 }
+
+// Steps
+.steps-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+    background: #f3f4fa;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
+    .primary {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  
+    .secondary {
+      font-size: 16px;
+      color: #888;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  
+    .steps {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+  
+      .step {
+        flex: 1;
+        padding: 20px;
+        background: white;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+  
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+  
+        i {
+          font-size: 40px;
+          color: #408af8;
+          margin-bottom: 15px;
+        }
+  
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+        }
+  
+        p {
+          font-size: 16px;
+          color: #555;
+        }
+  
+        .step-content {
+          padding: 10px 0;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        gap: 30px;
+  
+        .step {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
